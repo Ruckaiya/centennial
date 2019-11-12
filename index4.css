@@ -19,13 +19,13 @@ body {
     transition: 0.4s;
 }
 
-.container {
+/* .container {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
-}
+} */
 
-.flex {
+/* .flex {
     display: flex;
     justify-content: space-between;
 }
@@ -97,26 +97,61 @@ p.large-paragraph {
     min-height: 300px;
     height: calc(40vh);
     position: relative;
+}  */
+
+hr {
+  margin:0;
+}
+@media (min-width: 1000px) {
+nav li{
+  padding-right: 7px;
+  
+}
+/* form {
+padding-left: 60px;
 } */
-
-header {
-    background: transparent;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
 }
 
-#logo {
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    font-size: 1.7rem;
-    font-weight: 800;
-    color: rgb(14, 14, 14);
-    text-decoration: none;
-    position: relative;
-    top: 4px;
+
+header h6 i {
+    float: left;
+    font-size: 24px;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
+header h6 span {
+    overflow: hidden;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;    
+}
+.bd-placeholder-img {
+  background: linear-gradient(to right, #5d2d88, #ea4c11);
+}
+#default2.fixed-top {
+   position:fixed;
+   top:0; left:0;
+   width:100%;
+   background-color: #222;
+}
+#logo-small img{
+  max-height:50px;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+#logo-small
+{
+  display:none;
+}
+img.logo {
+  max-width:100%;
+}
+
+
 
 .hamburger-menu {
     background-color: transparent;
@@ -135,7 +170,7 @@ header {
     margin: 4px 0;
 }
 
-header ul {
+/* header ul {
     list-style-type: none;
 }
 
@@ -166,7 +201,7 @@ header ul li a.active {
 header ul.is-sticky li a:hover,
 header ul.is-sticky li a.active {
     color: #5f5f5f;
-}
+} */
 /* end: header styles */
 
 /* start: hero section styles */
@@ -210,9 +245,23 @@ header ul.is-sticky li a.active {
 }
 /* end: hero section styles */
 
+ /* #header-hero-container header nav {
+  padding-left: 7rem;
+} */
+
+.navbar.navbar-expand-lg.navbar-light {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 7rem;
+}
+
+.navbar.navbar-expand-lg.navbar-classic {
+  padding-bottom: 0;
+  padding-top: 0;
+}
 
 /* start: media queries */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     #logo {
         top: 1px;
     }
@@ -263,7 +312,7 @@ header ul.is-sticky li a.active {
     nav ul li a:hover {
         color: #f69314;
     }
-}
+} */
 
 /* end: media queries */
 
@@ -275,7 +324,7 @@ header ul.is-sticky li a.active {
 /********** section 1 **************/
 
 .section-1 {
-    padding: 20vmin 0vmin 0vmin 0vmin;
+    padding: 10vmin 0vmin 0vmin 0vmin;
   }
   
   .section-1 .row .col-md-6 .video video {
@@ -339,6 +388,10 @@ header ul.is-sticky li a.active {
   
   .section-2 .row .col-md-6:last-child {
     position: relative;
+  }
+
+  .section-2 .row {
+    flex-wrap: nowrap;
   }
   
   .section-2 .row .col-md-6 .panel {
@@ -524,7 +577,7 @@ header ul.is-sticky li a.active {
     min-height: 450px;
     height: calc(40vh);
     background: url(images/group.jpg) no-repeat center center / cover;
-    margin: 0 0 6rem 0;
+    margin: 4rem 0 6rem 0;
     font-family: 'Playfair Display', serif;
 
 
